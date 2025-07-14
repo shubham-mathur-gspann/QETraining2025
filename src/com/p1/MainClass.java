@@ -6,8 +6,6 @@ public class MainClass {
 
 		System.out.println("Dhruv Aggarwal");
 
-		System.out.println("<Rohan Singh was here>");
-
 
 	}
 
