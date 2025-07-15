@@ -1,11 +1,23 @@
-package com.p1;
+package seleniumpractice;
 
-public class MainClass {
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
-	public static void main(String[] args) {
-		System.out.println("sakshi");
+public class first {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.google.com/");
+		Thread.sleep(3000);
+		String s = driver.getTitle();
+		System.out.println("title = "+s);
+		String url =driver.getCurrentUrl();
+		System.out.println("URL = " + url);
+		driver.quit();
+
 	}
-
-		
 
 }
