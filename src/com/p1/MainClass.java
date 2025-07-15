@@ -19,4 +19,7 @@ public static void main(String[] args) throws InterruptedException {
         System.out.println("current url=" + url);
         driver.quit();
     }
-}
+
+	} 
+	
+
