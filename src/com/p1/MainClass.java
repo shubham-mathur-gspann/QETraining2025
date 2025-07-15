@@ -17,7 +17,4 @@ public class first {
 		String url =driver.getCurrentUrl();
 		System.out.println("URL = " + url);
 		driver.quit();
-
-	}
-
 }
