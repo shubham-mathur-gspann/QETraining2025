@@ -1,11 +1,26 @@
 package com.p1;
 
-public class MainClass {
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
-	public static void main(String[] args) {
-		System.out.println("Badal Singh");
+public class Firstsilenium {
 
-	}
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
 		
 
-}
+
+				WebDriver driver = new ChromeDriver();
+				driver.manage().window().maximize();
+				
+				driver.get("https://www.google.com");
+				Thread.sleep(3000);
+				String title = driver.getTitle();
+				String url = driver.getCurrentUrl();
+				System.out.println("url :"+url);
+				driver.quit();
+			}
+		
+
+
+	}
